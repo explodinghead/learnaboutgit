@@ -9,7 +9,7 @@
   "repository": {
     "type": "git",
     "url": "https://explodinghead/explodinghead"
-  }
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
