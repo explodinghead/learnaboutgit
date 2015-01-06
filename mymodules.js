@@ -1,4 +1,4 @@
-var mymodules = require('./index');
+var mymodules = require('explodinghead');
 
 mymodules.createDirs();
 mymodules.createWebServer();
