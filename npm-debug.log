@@ -1,114 +1,23 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/laurence/.nvm/v0.10.33/bin/node',
 1 verbose cli   '/home/laurence/.nvm/v0.10.33/bin/npm',
-1 verbose cli   'publish',
-1 verbose cli   './' ]
+1 verbose cli   'install' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
-4 verbose publish [ './' ]
-5 verbose cache add [ './', null ]
-6 verbose cache add name=undefined spec="./" args=["./",null]
-7 verbose parsed url { protocol: null,
-7 verbose parsed url   slashes: null,
-7 verbose parsed url   auth: null,
-7 verbose parsed url   host: null,
-7 verbose parsed url   port: null,
-7 verbose parsed url   hostname: null,
-7 verbose parsed url   hash: null,
-7 verbose parsed url   search: null,
-7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: './',
-7 verbose parsed url   path: './',
-7 verbose parsed url   href: './' }
-8 silly lockFile 0ee6c175- ./
-9 verbose lock ./ /home/laurence/.npm/0ee6c175-.lock
-10 verbose tar pack [ '/home/laurence/.npm/initialize/0.0.0/package.tgz', './' ]
-11 verbose tarball /home/laurence/.npm/initialize/0.0.0/package.tgz
-12 verbose folder ./
-13 info prepublish initialize@0.0.0
-14 silly lockFile 04cb2bca-tar tar://./
-15 verbose lock tar://./ /home/laurence/.npm/04cb2bca-tar.lock
-16 silly lockFile e10b5635-npm-initialize-0-0-0-package-tgz tar:///home/laurence/.npm/initialize/0.0.0/package.tgz
-17 verbose lock tar:///home/laurence/.npm/initialize/0.0.0/package.tgz /home/laurence/.npm/e10b5635-npm-initialize-0-0-0-package-tgz.lock
-18 silly lockFile 04cb2bca-tar tar://./
-19 silly lockFile 04cb2bca-tar tar://./
-20 silly lockFile e10b5635-npm-initialize-0-0-0-package-tgz tar:///home/laurence/.npm/initialize/0.0.0/package.tgz
-21 silly lockFile e10b5635-npm-initialize-0-0-0-package-tgz tar:///home/laurence/.npm/initialize/0.0.0/package.tgz
-22 silly lockFile 7a3f68e0-nce-npm-initialize-0-0-0-package /home/laurence/.npm/initialize/0.0.0/package
-23 verbose lock /home/laurence/.npm/initialize/0.0.0/package /home/laurence/.npm/7a3f68e0-nce-npm-initialize-0-0-0-package.lock
-24 silly lockFile 7a3f68e0-nce-npm-initialize-0-0-0-package /home/laurence/.npm/initialize/0.0.0/package
-25 silly lockFile 7a3f68e0-nce-npm-initialize-0-0-0-package /home/laurence/.npm/initialize/0.0.0/package
-26 silly lockFile 0ee6c175- ./
-27 silly lockFile 0ee6c175- ./
-28 silly publish { name: 'initialize',
-28 silly publish   version: '0.0.0',
-28 silly publish   description: 'First npm package',
-28 silly publish   main: 'initialize.js',
-28 silly publish   dependencies: { mkdirp: '^0.5.0' },
-28 silly publish   devDependencies: {},
-28 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
-28 silly publish   author: { name: 'explodinghead', email: 'explodinghead@outlook.com' },
-28 silly publish   license: 'ISC',
-28 silly publish   readme: 'ERROR: No README data found!',
-28 silly publish   _id: 'initialize@0.0.0',
-28 silly publish   _shasum: 'fb734f87657d7ed749b65d2a83bb9b3598adcc97',
-28 silly publish   _from: './' }
-29 verbose request where is /initialize
-30 verbose request registry https://registry.npmjs.org/
-31 verbose request id dd7086c85cd45869
-32 verbose url raw /initialize
-33 verbose url resolving [ 'https://registry.npmjs.org/', './initialize' ]
-34 verbose url resolved https://registry.npmjs.org/initialize
-35 verbose request where is https://registry.npmjs.org/initialize
-36 info trying registry request attempt 1 at 11:21:36
-37 http PUT https://registry.npmjs.org/initialize
-38 http 403 https://registry.npmjs.org/initialize
-39 verbose headers { date: 'Mon, 05 Jan 2015 11:21:37 GMT',
-39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
-39 verbose headers   'content-type': 'application/json',
-39 verbose headers   'cache-control': 'max-age=60',
-39 verbose headers   'content-length': '1925',
-39 verbose headers   'accept-ranges': 'bytes',
-39 verbose headers   via: '1.1 varnish',
-39 verbose headers   'x-served-by': 'cache-lcy1133-LCY',
-39 verbose headers   'x-cache': 'MISS',
-39 verbose headers   'x-cache-hits': '0',
-39 verbose headers   'x-timer': 'S1420456896.584603,VS0,VE601',
-39 verbose headers   'keep-alive': 'timeout=10, max=50',
-39 verbose headers   connection: 'Keep-Alive' }
-40 error publish Failed PUT 403
-41 error Error: forbidden user: explodinghead not authorized to modify initialize
-41 error Changed: description "Create a new repo with sane defaults" -> "First npm package"
-41 error Changed: dist-tags.latest "4.3.0" -> "0.0.0"
-41 error Added: versions.0.0.0
-41 error Changed: readme "# initialize\u000a[![NPM version][npm-image]][npm-url]\u000a[![Downloads][downloads-image]][downloads-url]\u000a\u000aCreate a new repo with sane defaults. Provides all the tools needed to create\u000aa unix style module.\u000a\u000a## Installation\u000a````\u000anpm install -g initialize\u000a````\u000a\u000a## Usage\u000a````\u000a  Usage: initialize <dirname>\u000a\u000a  Options:\u000a\u000a    -h, --help                    output usage information\u000a    -V, --version                 output the version number\u000a    -k, --keyword <tag>           add a keyword to package.json\u000a    -d, --description <sentence>  add a description\u000a````\u000a\u000a## .npmrc\u000aMake sure`~/.npmrc` contains at least the following value:\u000a```\u000ainit.author.name=tobiferret\u000a```\u000a\u000a## License\u000a[MIT](https://tldrlegal.com/license/mit-license)\u000a\u000a[npm-image]: https://img.shields.io/npm/v/initialize.svg?style=flat-square\u000a[npm-url]: https://npmjs.org/package/initialize\u000a[downloads-image]: http://img.shields.io/npm/dm/initialize.svg?style=flat-square\u000a[downloads-url]: https://npmjs.org/package/initialize\u000a" -> "ERROR: No README data found!"
-41 error Changed: time.modified "2014-12-21T14:23:35.306Z" -> "2015-01-05T11:23:50.710Z"
-41 error Added: time.0.0.0
-41 error Deleted: homepage
-41 error Deleted: keywords
-41 error Deleted: repository
-41 error Changed: author.name "Yoshua Wuyts" -> "explodinghead"
-41 error Changed: author.email "i@yoshuawuyts.com" -> "explodinghead@outlook.com"
-41 error Deleted: bugs
-41 error Changed: license "MIT" -> "ISC"
-41 error Changed: readmeFilename "README.md" -> ""
-41 error Added: _attachments: initialize
-41 error     at RegClient.<anonymous> (/home/laurence/.nvm/v0.10.33/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
-41 error     at Request._callback (/home/laurence/.nvm/v0.10.33/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
-41 error     at Request.self.callback (/home/laurence/.nvm/v0.10.33/lib/node_modules/npm/node_modules/request/request.js:236:22)
-41 error     at Request.emit (events.js:98:17)
-41 error     at Request.<anonymous> (/home/laurence/.nvm/v0.10.33/lib/node_modules/npm/node_modules/request/request.js:1142:14)
-41 error     at Request.emit (events.js:117:20)
-41 error     at IncomingMessage.<anonymous> (/home/laurence/.nvm/v0.10.33/lib/node_modules/npm/node_modules/request/request.js:1096:12)
-41 error     at IncomingMessage.emit (events.js:117:20)
-41 error     at _stream_readable.js:943:16
-41 error     at process._tickCallback (node.js:419:13)
-42 error If you need help, you may report this *entire* log,
-42 error including the npm and node versions, at:
-42 error     <http://github.com/npm/npm/issues>
-43 error System Linux 3.13.0-24-generic
-44 error command "/home/laurence/.nvm/v0.10.33/bin/node" "/home/laurence/.nvm/v0.10.33/bin/npm" "publish" "./"
-45 error cwd /home/laurence/Documents/node/web-server
-46 error node -v v0.10.33
-47 error npm -v 1.4.28
-48 verbose exit [ 1, true ]
+4 error install Couldn't read dependencies
+5 error Failed to parse json
+5 error Unexpected token }
+6 error File: /home/laurence/Documents/node/learnaboutgit/package.json
+7 error Failed to parse package.json data.
+7 error package.json must be actual JSON, not just JavaScript.
+7 error
+7 error This is not a bug in npm.
+7 error Tell the package author to fix their package.json file. JSON.parse
+8 error System Linux 3.13.0-24-generic
+9 error command "/home/laurence/.nvm/v0.10.33/bin/node" "/home/laurence/.nvm/v0.10.33/bin/npm" "install"
+10 error cwd /home/laurence/Documents/node/learnaboutgit
+11 error node -v v0.10.33
+12 error npm -v 1.4.28
+13 error file /home/laurence/Documents/node/learnaboutgit/package.json
+14 error code EJSONPARSE
+15 verbose exit [ 1, true ]
